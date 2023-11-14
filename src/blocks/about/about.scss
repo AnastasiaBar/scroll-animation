@@ -1,0 +1,7 @@
+.about {
+  $block-name: &; // #{$block-name}__element
+
+  width: 100%;
+  height: 1000px;
+  background: var(--grey-dark);
+}

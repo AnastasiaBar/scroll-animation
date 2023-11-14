@@ -1,0 +1,26 @@
+extends ../templates/layout_default.pug
+
+block variables
+  - isMainPage = false
+  - pageTitle = 'Стартовая страница'
+  - metaDescription = 'description'
+  - metaKeywords = 'keywords'
+
+block content
+
+    .hero 1
+
+    .about 2
+
+    .planet 3
+
+    .technologies 4
+
+    .gallery 5
+      .gallery__container-photo
+        img.gallery__photo(src='img/gallery__photo-01.png', alt='')
+        img.gallery__photo(src='img/gallery__photo-02.png', alt='')
+        img.gallery__photo(src='img/gallery__photo-03.png', alt='')
+        img.gallery__photo(src='img/gallery__photo-04.png', alt='')
+
+    .news 6
