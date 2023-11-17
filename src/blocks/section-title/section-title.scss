@@ -1,0 +1,10 @@
+.section-title {
+  $block-name: &;
+
+  margin: 0;
+  color: var(--white);
+  font-size: 40px;
+  font-family: var(--font-unbounded);
+  line-height: 40px; /* 100% */
+  text-transform: uppercase;
+}

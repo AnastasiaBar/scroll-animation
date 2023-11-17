@@ -1,9 +1,17 @@
 @font-face {
+  font-weight: 300;
+  font-family: Inter;
+  font-style: normal;
+  font-display: swap;
+  src: url("/{{fonts}}/inter/Inter-Light.woff2") format("woff2");
+}
+
+@font-face {
   font-weight: 400;
   font-family: Inter;
   font-style: normal;
   font-display: swap;
-  src: url("/{{fonts}}/Inter-Regular.woff2") format("woff2");
+  src: url("/{{fonts}}/inter/Inter-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +19,7 @@
   font-family: Inter;
   font-style: normal;
   font-display: swap;
-  src: url("/{{fonts}}/Inter-Medium.woff2") format("woff2");
+  src: url("/{{fonts}}/inter/Inter-Medium.woff2") format("woff2");
 }
 
 @font-face {
@@ -19,5 +27,13 @@
   font-family: Inter;
   font-style: normal;
   font-display: swap;
-  src: url("/{{fonts}}/Inter-Bold.woff2") format("woff2");
+  src: url("/{{fonts}}/inter/Inter-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: Unbounded;
+  font-style: normal;
+  font-display: swap;
+  src: url("/{{fonts}}/unbounded/Unbounded-Regular.woff2") format("woff2");
 }

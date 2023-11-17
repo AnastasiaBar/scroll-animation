@@ -13,8 +13,33 @@ block content
   .horizontal-animation
     .horizontal-animation__inner
       .horizontal-animation__animation.horizontal-animation__animation--right
-        .hero 1
-        .about 2
+        .hero
+          .container
+            .hero__inner
+              .hero__left
+                h2.section-title В иллюминатор насыпали земли
+                .hero__container-photo
+                  img.hero__photo(src='img/hero__photo-01.png', alt='')
+                .hero__container-quote
+                  svg.hero__svg-quote.hero__svg-quote--top
+                    use(xlink:href = 'img/svgSprite.svg#icon__quote')
+                  .hero__block-text
+                    p.hero__text-quote Земля в иллюминаторе, земля в иллюминаторе... зачем туда насыпали земли?! Чтоб там в иллюминатаре, чтоб там в иллюминаторе укропчик и петрушечка росли...
+                    p.hero__text-name Неизвестный автор
+                  svg.hero__svg-quote.hero__svg-quote--bottom
+                    use(xlink:href = 'img/svgSprite.svg#icon__quote')
+              .hero__right
+                .container__info
+                  h3.hero__title-block Как легко получить из самых общих соображений, волна представляет собой гравитационный экситон.
+                  p.hero__text В отличие от пылевого и ионного хвостов, резонатор точно переворачивает бозе-конденсат. Гетерогенная структура перечеркивает далекий квант, как это случилось в 1994 году с кометой Шумейкеpов-Леви 9. Апогей вертикально колеблет электронный лазер.
+                  p.hero__text Резонатор вращает секстант. Ионный хвост, в согласии с традиционными представлениями, выталкивает вихревой дип-скай объект. Под воздействием переменного напряжения надир представляет собой векторный магнит. Жидкость, это удалось установить по характеру спектра, колеблет дип-скай объект в том случае, когда процессы переизлучения спонтанны. Вещество меняет эллиптический тропический год.
+                .hero__block-stamps
+                  img.hero__photo-stamps(src='img/hero__photo-02.png', alt='')
+                  img.hero__photo-stamps(src='img/hero__photo-03.png', alt='')
+
+        .about
+
+
 
   .horizontal-animation
     .horizontal-animation__inner

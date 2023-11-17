@@ -44,6 +44,7 @@ export default function scrollPage() {
             scrollTrigger: {
               trigger: section,
               pin: thisPinWrap,
+              invalidateOnRefresh: true,
               scrub: true,
               end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
             },

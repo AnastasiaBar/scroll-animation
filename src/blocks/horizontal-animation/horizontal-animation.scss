@@ -12,9 +12,11 @@
 
     &--right {
       display: block;
+      overflow: hidden;
 
       @media screen and (min-width: $screen-d) {
         display: flex;
+        overflow: inherit;
       }
     }
   }
