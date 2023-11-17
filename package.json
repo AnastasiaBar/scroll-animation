@@ -90,6 +90,7 @@
   },
   "dependencies": {
     "autosize": "^5.0.2",
+    "gsap": "^3.12.2",
     "imask": "^6.4.3",
     "sanitize.css": "^13.0.0"
   },

@@ -1,0 +1,21 @@
+@import "../../scss/breakpoints";
+
+.horizontal-animation {
+  $block-name: &; // #{$block-name}__element
+
+  overflow-x: hidden;
+
+  &__inner,
+  &__animation {
+    display: flex;
+    min-height: 100vh;
+
+    &--right {
+      display: block;
+
+      @media screen and (min-width: $screen-d) {
+        display: flex;
+      }
+    }
+  }
+}

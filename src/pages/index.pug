@@ -8,19 +8,18 @@ block variables
 
 block content
 
-    .hero 1
+  +scroll-indicator
 
-    .about 2
+  .horizontal-animation
+    .horizontal-animation__inner
+      .horizontal-animation__animation.horizontal-animation__animation--right
+        .hero 1
+        .about 2
 
-    .planet 3
-
-    .technologies 4
-
-    .gallery 5
-      .gallery__container-photo
-        img.gallery__photo(src='img/gallery__photo-01.png', alt='')
-        img.gallery__photo(src='img/gallery__photo-02.png', alt='')
-        img.gallery__photo(src='img/gallery__photo-03.png', alt='')
-        img.gallery__photo(src='img/gallery__photo-04.png', alt='')
-
-    .news 6
+  .horizontal-animation
+    .horizontal-animation__inner
+      .horizontal-animation__animation.horizontal-animation__animation--right
+        .planet 3
+        .technologies 4
+        .gallery 5
+        .news 6
