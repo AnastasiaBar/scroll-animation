@@ -1,0 +1,24 @@
+//- Все примеси в этом файле должны начинаться c имени блока (scroll-indicator)
+//- Упоминание имени блока в классах обязательно, без этого он не попадёт
+//- в сборку
+
+mixin scroll-indicator(mods)
+
+  //- Принимает:
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +scroll-indicator('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if (typeof (mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + 'scroll-indicator--' + modsList[i].trim();
+      }
+    }
+
+  .scroll-indicator(class=allMods)&attributes(attributes)
+    .scroll-indicator__inner
+      .scroll-indicator__progress
