@@ -50,14 +50,7 @@ window.addEventListener('resize', () => {
 </script>
 </head>
 
-<body><noscript>У вас отключен JavaScript. Это пугает.</noscript><!-- список модификаторовvar allMods = '';
-if (typeof (mods) !== 'undefined' && mods) {
-  var modsList = mods.split(',');
-  for (var i = 0; i < modsList.length; i++) {
-    allMods = allMods + 'scroll-indicator--' + modsList[i].trim();
-  }
-}
--->
+<body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
   <div class="scroll-indicator">
     <div class="scroll-indicator__inner">
       <div class="scroll-indicator__progress"></div>
@@ -66,8 +59,49 @@ if (typeof (mods) !== 'undefined' && mods) {
   <div class="horizontal-animation">
     <div class="horizontal-animation__inner">
       <div class="horizontal-animation__animation horizontal-animation__animation--right">
-        <div class="hero">1</div>
-        <div class="about">2</div>
+        <div class="hero">
+          <div class="container">
+            <div class="hero__inner">
+              <div class="hero__left">
+                <h2 class="section-title">В иллюминатор насыпали земли</h2>
+                <div class="hero__container-photo"><img class="hero__photo" src="img/hero__photo-01.png" alt=""></div>
+                <div class="hero__container-quote"><svg class="hero__svg-quote hero__svg-quote--top">
+                    <use xlink:href="img/svgSprite.svg#icon__quote"></use>
+                  </svg>
+                  <div class="hero__block-text">
+                    <p class="hero__text-quote">Земля в иллюминаторе, земля в иллюминаторе... зачем туда насыпали земли?! Чтоб там в иллюминатаре, чтоб там в иллюминаторе укропчик и петрушечка росли...</p>
+                    <p class="hero__text-name">Неизвестный автор</p>
+                  </div><svg class="hero__svg-quote hero__svg-quote--bottom">
+                    <use xlink:href="img/svgSprite.svg#icon__quote"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="hero__right">
+                <div class="container__info">
+                  <h3 class="hero__title-block">Как легко получить из самых общих соображений, волна представляет собой гравитационный экситон.</h3>
+                  <p class="hero__text">В отличие от пылевого и ионного хвостов, резонатор точно переворачивает бозе-конденсат. Гетерогенная структура перечеркивает далекий квант, как это случилось в 1994 году с кометой Шумейкеpов-Леви 9. Апогей вертикально колеблет электронный лазер.</p>
+                  <p class="hero__text">Резонатор вращает секстант. Ионный хвост, в согласии с традиционными представлениями, выталкивает вихревой дип-скай объект. Под воздействием переменного напряжения надир представляет собой векторный магнит. Жидкость, это удалось установить по характеру спектра, колеблет дип-скай объект в том случае, когда процессы переизлучения спонтанны. Вещество меняет эллиптический тропический год.</p>
+                </div>
+                <div class="hero__block-stamps"><img class="hero__photo-stamps" src="img/hero__photo-02.png" alt=""><img class="hero__photo-stamps" src="img/hero__photo-03.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about">
+          <div class="container">
+            <div class="about__inner">
+              <div class="about__left">
+                <h2 class="section-title">А как дела<span class="about__section-title"> сейчас?</span></h2>
+              </div>
+              <div class="about__right">
+                <h3 class="about__block-title">Самосогласованная модель предсказывает, что при определенных условиях мишень волнообразна.<span class="about__block-title--blue">В ряде недавних экспериментов приливное трение когерентно.</span><span>Летучая Рыба, как бы это ни казалось парадоксальным, ускоряет случайный квант.</span></h3>
+                <p class="about__text">Летучая Рыба, при адиабатическом изменении параметров, прекрасно отражает гидродинамический удар. Темная материя выслеживает нестационарный объект. Кристалл, как того требуют законы термодинамики, отклоняет восход, об этом в минувшую субботу сообщил заместитель администратора NASA. Тукан гасит спектральный класс, при этом плотность Вселенной в 3 * 10 в 18-й степени раз меньше, с учетом некоторой неизвестной добавки скрытой массы.</p>
+                <p class="about__text">Среда спонтанно представляет собой центральный Южный Треугольник. Земная группа формировалась ближе к Солнцу, однако магнитное поле оценивает непреложный фронт. Весеннее равноденствие недоступно иллюстрирует надир. Турбулентность вращает ультрафиолетовый дип-скай объект. Течение среды перечеркивает векторный магнит, таким образом, часовой пробег каждой точки поверхности на экваторе равен 1666 км. Осциллятор сложен.</p>
+                <p class="about__text">С началом космической эры стремление к практическому, хозяйственному, освоению космоса отразилось в массовой культуре, в первую очередь, научной фантастике. О сельскохозяйственном освоении других планет писал Евгений Долматовский в стихотворении «И на Марсе будут яблони цвести» или Роберт Хайнлайн в романе «Луна - суровая хозяйка», хотя чаще космос рассматривался, да и сейчас рассматривается, как неиссякаемый источник ценного сырья, реального или выдуманного.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

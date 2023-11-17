@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon__arrow" viewBox="0 0 40 40"><path d="M25.594 9.008a1 1 0 011.414-1.414l-1.414 1.414zM38 20l.707-.707.707.707-.707.707L38 20zM27.008 32.406a1 1 0 01-1.414-1.414l1.414 1.414zm0-24.812l11.7 11.699-1.415 1.414L25.594 9.008l1.414-1.414zm11.7 13.113l-11.7 11.699-1.414-1.414 11.699-11.7 1.414 1.415zM38 21H.793v-2H38v2z" fill="#fff"/></symbol><symbol id="icon__corner" viewBox="0 0 11 11"><path d="M11 1H1v10" stroke="#fff" stroke-width="2"/></symbol><symbol id="icon__quote" viewBox="0 0 48 48"><path d="M18.27 18h6L20 29.214h-6L18.27 18zm10 0h6L30 29.214h-6L28.27 18z" fill="#fff"/></symbol><view id="icon__arrow--down-view" viewBox="0 0 24 24"/>
+<use href="#icon__arrow--down" width="24" height="24" x="0" y="0"/>
+
+<view id="icon__default-view" viewBox="0 80 24 24"/>
+<use href="#icon__default" width="24" height="24" x="0" y="80"/>
+</svg>
