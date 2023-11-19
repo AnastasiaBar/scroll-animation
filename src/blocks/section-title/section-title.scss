@@ -1,10 +1,17 @@
+@import "../../scss/breakpoints";
+
 .section-title {
   $block-name: &;
 
   margin: 0;
   color: var(--white);
-  font-size: 40px;
+  font-size: 26px;
   font-family: var(--font-unbounded);
-  line-height: 40px; /* 100% */
+  line-height: 26px;
   text-transform: uppercase;
+
+  @media screen and (min-width: $screen-d) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }

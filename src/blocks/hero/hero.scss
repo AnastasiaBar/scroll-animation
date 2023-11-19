@@ -3,91 +3,149 @@
 .hero {
   $block-name: &; // #{$block-name}__element
 
-  width: 100vw;
   background: var(--purple);
 
   @media screen and (min-width: $screen-d) {
+    width: 100vw;
     height: 100vh;
   }
 
   &__inner {
     position: relative;
     z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    height: 100%;
-    padding-top: 100px;
+    display: block;
+    padding: 40px 0;
+
+    @media screen and (min-width: $screen-tl) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      height: 100%;
+      padding: 60px 0 0;
+    }
+
+    @media screen and (min-width: $screen-d) {
+      padding: 100px 0 0;
+    }
   }
 
   &__left,
   &__right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @media screen and (min-width: $screen-tl) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 
   &__left {
-    grid-column: 1/span 5;
-    grid-template-columns: repeat(7, 1fr);
+    @media screen and (min-width: $screen-tl) {
+      grid-column: 1/span 5;
+      grid-template-columns: repeat(7, 1fr);
+    }
   }
 
   &__right {
-    grid-column: 7/span 6;
-    grid-template-columns: repeat(6, 1fr);
+    @media screen and (min-width: $screen-tl) {
+      grid-column: 7/span 6;
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 
   &__container-photo {
     display: flex;
     justify-content: flex-end;
     height: 100%;
+    margin: 20px 0;
+
+    @media screen and (min-width: $screen-d) {
+      margin: 0;
+    }
   }
 
   &__photo {
-    width: 70%;
-    height: 100%;
-    object-fit: contain;
+    width: 65%;
+    height: 50%;
+    object-fit: cover;
+
+    @media screen and (min-width: $screen-tl) {
+      width: 85%;
+      height: 100%;
+    }
   }
 
   &__container-quote {
+    position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $screen-d) {
+      margin-bottom: 80px;
+    }
   }
 
   &__svg-quote {
     flex-shrink: 0;
-    width: 48px;
-    height: 48px;
+    width: 30px;
+    height: 30px;
+
+    @media screen and (min-width: $screen-d) {
+      width: 48px;
+      height: 48px;
+    }
 
     &--top {
       position: relative;
-      top: -40px;
+      top: -20px;
+
+      @media screen and (min-width: $screen-d) {
+        top: -40px;
+      }
     }
 
     &--bottom {
-      position: relative;
-      bottom: -70px;
+      position: absolute;
+      right: 0;
+      bottom: 40px;
+
+      @media screen and (min-width: $screen-d) {
+        position: relative;
+        bottom: -70px;
+      }
     }
   }
 
   &__text-quote,
   &__text-name {
+    width: calc(100% - 30px);
     margin: 0;
     color: var(--white);
     font-weight: 300;
     line-height: 24px;
+
+    @media screen and (min-width: $screen-d) {
+      width: 100%;
+    }
   }
 
   &__text-quote {
     margin-bottom: 16px;
-    font-size: 18px;
+    font-size: 14px;
+
+    @media screen and (min-width: $screen-d) {
+      font-size: 18px;
+    }
   }
 
   &__text-name {
-    font-size: 16px;
+    font-size: 14px;
     text-align: right;
+
+    @media screen and (min-width: $screen-d) {
+      font-size: 16px;
+    }
   }
 
   &__title-block,
@@ -99,19 +157,33 @@
 
   &__title-block {
     margin: 0 0 16px;
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 28px;
+
+    @media screen and (min-width: $screen-d) {
+      font-size: 32px;
+      line-height: 36px;
+    }
   }
 
   &__text {
     margin: 0 0 10px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
+
+    @media screen and (min-width: $screen-d) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   &__block-stamps {
-    display: flex;
+    display: none;
     gap: 0 30px;
     align-items: flex-end;
+
+    @media screen and (min-width: $screen-tl) {
+      display: flex;
+    }
   }
 }
