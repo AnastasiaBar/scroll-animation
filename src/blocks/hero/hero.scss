@@ -1,8 +1,10 @@
 @import "../../scss/breakpoints";
+@import "../../scss/mixins/fluid";
 
 .hero {
   $block-name: &; // #{$block-name}__element
 
+  overflow: hidden;
   background: var(--purple);
 
   @media screen and (min-width: $screen-d) {
@@ -122,7 +124,7 @@
     margin: 0;
     color: var(--white);
     font-weight: 300;
-    line-height: 24px;
+    line-height: fluid(20, 24, 320, 1680);
 
     @media screen and (min-width: $screen-d) {
       width: 100%;
@@ -131,20 +133,12 @@
 
   &__text-quote {
     margin-bottom: 16px;
-    font-size: 14px;
-
-    @media screen and (min-width: $screen-d) {
-      font-size: 18px;
-    }
+    font-size: fluid(14, 18, 320, 1680);
   }
 
   &__text-name {
-    font-size: 14px;
+    font-size: fluid(14, 16, 320, 1680);
     text-align: right;
-
-    @media screen and (min-width: $screen-d) {
-      font-size: 16px;
-    }
   }
 
   &__title-block,
@@ -156,33 +150,33 @@
 
   &__title-block {
     margin: 0 0 16px;
-    font-size: 22px;
-    line-height: 28px;
-
-    @media screen and (min-width: $screen-d) {
-      font-size: 32px;
-      line-height: 36px;
-    }
+    font-size: fluid(22, 32, 320, 1680);
+    line-height: fluid(28, 36, 320, 1680);
   }
 
   &__text {
     margin: 0 0 10px;
-    font-size: 14px;
-    line-height: 20px;
-
-    @media screen and (min-width: $screen-d) {
-      font-size: 16px;
-      line-height: 24px;
-    }
+    font-size: fluid(14, 16, 320, 1680);
+    line-height: fluid(20, 24, 320, 1680);
   }
 
   &__block-stamps {
     display: none;
-    gap: 0 30px;
+    gap: 0 50px;
     align-items: flex-end;
 
     @media screen and (min-width: $screen-tl) {
       display: flex;
+    }
+  }
+
+  &__photo-stamps {
+    &:first-child {
+      transform: rotate(15deg);
+    }
+
+    &:last-child {
+      transform: rotate(-15deg);
     }
   }
 }

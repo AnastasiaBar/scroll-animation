@@ -1,17 +1,13 @@
 @import "../../scss/breakpoints";
+@import "../../scss/mixins/fluid";
 
 .section-title {
   $block-name: &;
 
   margin: 0;
   color: var(--white);
-  font-size: 26px;
+  font-size: fluid(26, 40, 320, 1680);
   font-family: var(--font-unbounded);
-  line-height: 26px;
+  line-height: fluid(26, 40, 320, 1680);
   text-transform: uppercase;
-
-  @media screen and (min-width: $screen-d) {
-    font-size: 40px;
-    line-height: 40px;
-  }
 }

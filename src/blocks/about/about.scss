@@ -1,4 +1,5 @@
 @import "../../scss/breakpoints";
+@import "../../scss/mixins/fluid";
 
 .about {
   $block-name: &; // #{$block-name}__element
@@ -6,6 +7,7 @@
   position: relative;
   width: 100vw;
   min-height: auto;
+  overflow: hidden;
   background: var(--grey-dark);
 
   @media screen and (min-width: $screen-d) {
@@ -13,7 +15,6 @@
     min-height: 100vh;
   }
 
-  &::after,
   &::before {
     position: absolute;
     top: 0;
@@ -21,22 +22,14 @@
     display: none;
     width: 100vw;
     height: 100%;
+    background-image: url("../img/about__photo-01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     content: "";
 
     @media screen and (min-width: $screen-tl) {
       display: block;
     }
-  }
-
-  &::after {
-    background-image: linear-gradient(to left, #282730, #282730);
-    opacity: 0.5;
-  }
-
-  &::before {
-    background-image: url("../img/about__photo-01.png");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   &__inner {
@@ -113,13 +106,8 @@
 
   &__block-title {
     margin: 0 0 16px;
-    font-size: 22px;
-    line-height: 28px;
-
-    @media screen and (min-width: $screen-tl) {
-      font-size: 32px;
-      line-height: 36px;
-    }
+    font-size: fluid(22, 32, 320, 1680);
+    line-height: fluid(28, 36, 320, 1680);
 
     &--blue {
       background: var(--purple);
@@ -128,13 +116,8 @@
 
   &__text {
     margin: 0 0 8px;
-    font-size: 14px;
-    line-height: 20px;
-
-    @media screen and (min-width: $screen-d) {
-      font-size: 16px;
-      line-height: 24px;
-    }
+    font-size: fluid(14, 16, 320, 1680);
+    line-height: fluid(20, 24, 320, 1680);
 
     &:last-child {
       margin-bottom: 0;
