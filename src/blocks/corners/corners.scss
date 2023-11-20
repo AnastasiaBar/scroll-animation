@@ -1,0 +1,27 @@
+@import "../../scss/breakpoints";
+
+.corners {
+  $block-name: &; // #{$block-name}__element
+
+  display: none;
+
+  @media screen and (min-width: $screen-tl) {
+    display: flex;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 360px;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    width: 10px;
+    height: 10px;
+
+    &--bottom-left {
+      transform: scale(1, -1);
+    }
+  }
+}

@@ -13,7 +13,6 @@
   &__inner {
     position: relative;
     z-index: 1;
-    display: block;
     padding: 40px 0;
 
     @media screen and (min-width: $screen-tl) {
@@ -65,7 +64,7 @@
   &__photo {
     width: 65%;
     height: 50%;
-    object-fit: cover;
+    object-fit: contain;
 
     @media screen and (min-width: $screen-tl) {
       width: 85%;
