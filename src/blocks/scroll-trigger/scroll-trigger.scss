@@ -1,6 +1,6 @@
 @import "../../scss/breakpoints";
 
-.horizontal-animation {
+.scroll-trigger {
   $block-name: &; // #{$block-name}__element
 
   overflow-x: hidden;
