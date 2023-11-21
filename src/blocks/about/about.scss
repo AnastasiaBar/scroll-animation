@@ -69,6 +69,7 @@
     margin-top: 40px;
 
     @media screen and (min-width: $screen-tl) {
+      display: block;
       grid-column: 6/span 7;
       grid-template-columns: repeat(7, 1fr);
       margin-top: 0;
@@ -111,6 +112,12 @@
 
     &--blue {
       background: var(--purple);
+    }
+  }
+
+  &__container-text {
+    @media screen and (min-width: $screen-tl) {
+      margin-top: 16px;
     }
   }
 
