@@ -18,6 +18,7 @@
     width: 100vh;
     height: 100vh;
     transform: translate(-50%, -50%);
+    pointer-events: none;
 
     &::before,
     &::after {

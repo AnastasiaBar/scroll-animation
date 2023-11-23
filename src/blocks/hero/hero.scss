@@ -42,6 +42,7 @@
     @media screen and (min-width: $screen-tl) {
       grid-column: 1/span 5;
       grid-template-columns: repeat(7, 1fr);
+      height: 100vh;
     }
   }
 
@@ -49,13 +50,14 @@
     @media screen and (min-width: $screen-tl) {
       grid-column: 7/span 6;
       grid-template-columns: repeat(6, 1fr);
+      height: 100vh;
     }
   }
 
   &__container-photo {
     display: flex;
     justify-content: flex-end;
-    height: 100%;
+    max-height: 50%;
     margin: 20px 0;
 
     @media screen and (min-width: $screen-d) {
@@ -65,12 +67,10 @@
 
   &__photo {
     width: 65%;
-    height: 50%;
     object-fit: contain;
 
     @media screen and (min-width: $screen-tl) {
       width: 85%;
-      height: 100%;
     }
   }
 
@@ -80,10 +80,11 @@
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 40px;
+    margin: auto;
+    padding-bottom: 40px;
 
     @media screen and (min-width: $screen-d) {
-      margin-bottom: 80px;
+      padding-bottom: 80px;
     }
   }
 

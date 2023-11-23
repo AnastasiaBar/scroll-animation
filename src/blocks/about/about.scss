@@ -129,15 +129,20 @@
   &__text {
     width: 100%;
     margin: 0 0 8px;
-    font-size: fluid(14, 16, 320, 1680);
-    line-height: fluid(20, 24, 320, 1680);
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    span {
-      transition: opacity 0.5s ease-out;
+    div {
+      color: transparent;
+      font-weight: 400;
+      font-size: fluid(14, 16, 320, 1680);
+      line-height: fluid(20, 24, 320, 1680);
+      background: linear-gradient(to right, var(--white) 50%, var(--grey-light) 50%);
+      background-position-x: 100%;
+      background-size: 200% 100%;
+      background-clip: text;
     }
   }
 }
