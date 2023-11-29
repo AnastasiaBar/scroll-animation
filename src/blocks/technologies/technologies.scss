@@ -1,14 +1,13 @@
 @import "../../scss/breakpoints";
 
 .technologies {
-  $block-name: &; // #{$block-name}__element
+  $block-name: &;
 
-  width: 100vw;
-  height: 500px;
-  min-height: auto;
   background: var(--purple-light);
 
   @media screen and (min-width: $screen-d) {
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
   }
 }

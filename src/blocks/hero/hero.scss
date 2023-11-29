@@ -2,13 +2,13 @@
 @import "../../scss/mixins/fluid";
 
 .hero {
-  $block-name: &; // #{$block-name}__element
+  $block-name: &;
 
   overflow: hidden;
   background: var(--purple);
 
   @media screen and (min-width: $screen-d) {
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
   }
 

@@ -1,0 +1,20 @@
+.block-title {
+  $block-name: &; // #{$block-name}__element
+
+  margin: 0;
+  font-weight: 300;
+  font-size: fluid(22, 32, 320, 1680);
+  line-height: fluid(28, 36, 320, 1680);
+
+  &--blue {
+    background: var(--purple);
+  }
+
+  &--white {
+    color: var(--white);
+  }
+
+  &--black {
+    color: var(--black);
+  }
+}

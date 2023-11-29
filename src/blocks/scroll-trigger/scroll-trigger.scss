@@ -1,9 +1,7 @@
 @import "../../scss/breakpoints";
 
 .scroll-trigger {
-  $block-name: &; // #{$block-name}__element
-
-  overflow-x: hidden;
+  $block-name: &;
 
   &__inner,
   &__animation {

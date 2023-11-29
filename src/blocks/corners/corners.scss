@@ -1,7 +1,7 @@
 @import "../../scss/breakpoints";
 
 .corners {
-  $block-name: &; // #{$block-name}__element
+  $block-name: &;
 
   display: none;
 
@@ -11,11 +11,12 @@
     height: 100%;
   }
 
-  &__left {
+  &__left,
+  &__right {
     display: flex;
     flex-direction: column;
-    gap: 360px;
     justify-content: space-between;
+    height: 100%;
   }
 
   &__icon {
@@ -24,6 +25,14 @@
 
     &--bottom-left {
       transform: scale(1, -1);
+    }
+
+    &--top-right {
+      transform: scale(-1, 1);
+    }
+
+    &--bottom-right {
+      transform: scale(-1, -1);
     }
   }
 }

@@ -2,7 +2,7 @@
 @import "../../scss/mixins/fluid";
 
 .about {
-  $block-name: &; // #{$block-name}__element
+  $block-name: &;
 
   position: relative;
   width: 100vw;
@@ -11,6 +11,7 @@
   background: var(--grey-dark);
 
   @media screen and (min-width: $screen-d) {
+    width: 100vw;
     height: 1000px;
     min-height: 100vh;
   }
@@ -100,20 +101,17 @@
     }
   }
 
-  &__block-title,
-  &__text {
-    color: var(--white);
-    font-weight: 300;
+  &__corner-left {
+    display: none;
+    gap: 360px;
+
+    @media screen and (min-width: $screen-tl) {
+      display: flex;
+    }
   }
 
   &__block-title {
     margin: 0 0 16px;
-    font-size: fluid(22, 32, 320, 1680);
-    line-height: fluid(28, 36, 320, 1680);
-
-    &--blue {
-      background: var(--purple);
-    }
   }
 
   &__container-text {
@@ -129,6 +127,8 @@
   &__text {
     width: 100%;
     margin: 0 0 8px;
+    color: var(--white);
+    font-weight: 300;
 
     &:last-child {
       margin-bottom: 0;
