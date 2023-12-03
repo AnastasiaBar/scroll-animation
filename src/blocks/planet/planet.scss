@@ -20,12 +20,8 @@
     @media screen and (min-width: $screen-tl) {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      height: 100%;
-      padding: 100px 0 160px;
-    }
-
-    @media screen and (min-width: $screen-d) {
       width: 100%;
+      padding: 100px 0 160px;
     }
   }
 
@@ -39,6 +35,7 @@
   }
 
   &__right {
+    z-index: 10;
     margin-top: 40px;
 
     @media screen and (min-width: $screen-tl) {
@@ -145,6 +142,7 @@
 
   &__container-list {
     margin-top: 40px;
+    padding-left: 0;
   }
 
   &__item {
@@ -189,13 +187,8 @@
       padding: 60px;
     }
 
-    @media screen and (min-width: $screen-tl) {
-      padding: 40px;
-    }
-
     @media screen and (min-width: $screen-dl) {
       max-width: 70%;
-      padding: 60px;
       object-fit: contain;
     }
   }
@@ -208,6 +201,7 @@
     left: 50%;
     width: 40%;
     height: 40%;
+    object-fit: contain;
     transform: translate(-50%, -50%);
 
     @media screen and (min-width: $screen-tl) {

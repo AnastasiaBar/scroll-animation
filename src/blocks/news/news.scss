@@ -9,6 +9,7 @@
   background: lightgrey;
 
   @media screen and (min-width: $screen-d) {
+    position: relative;
     height: 100%;
   }
 }

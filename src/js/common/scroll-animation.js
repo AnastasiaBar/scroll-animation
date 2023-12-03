@@ -8,6 +8,15 @@ export default function scrollPage() {
     const thisPinWrap = section.querySelector(".scroll-trigger__inner");
     const thisAnimWrap = thisPinWrap.querySelector(".scroll-trigger__animation");
     const getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth);
+    let coef, topStartScroll;
+    window.innerHeight < 900 ? (coef = 0.1) : (coef = 0.35);
+    section.classList.contains("scroll-trigger--two")
+      ? (topStartScroll = document.querySelector(".about").clientHeight - window.innerHeight * coef)
+      : (topStartScroll = "top");
+
+    document.querySelectorAll(".section-scroll").forEach((item) => {
+      item.style.top = topStartScroll + "px";
+    });
 
     gsap.fromTo(
       thisAnimWrap,
@@ -24,7 +33,8 @@ export default function scrollPage() {
           pin: thisPinWrap,
           invalidateOnRefresh: true,
           scrub: true,
-          start: "top top",
+          markers: true,
+          start: `${topStartScroll} top`,
           end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
         },
       },

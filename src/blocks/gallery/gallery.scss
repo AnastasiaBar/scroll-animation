@@ -11,6 +11,7 @@
   background: lightblue;
 
   @media screen and (min-width: $screen-d) {
+    position: relative;
     height: 100%;
     min-height: auto;
   }
