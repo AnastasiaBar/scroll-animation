@@ -1,15 +1,72 @@
 @import "../../scss/breakpoints";
+@import "../../scss/mixins/fluid";
 
 .news {
-  $block-name: &; // #{$block-name}__element
+  $block-name: &;
 
+  position: relative;
   width: 100vw;
-  height: 100%;
-  min-height: auto;
-  background: lightgrey;
+  margin: 40px 0;
+  overflow-x: hidden;
 
   @media screen and (min-width: $screen-d) {
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  &__inner {
     position: relative;
-    height: 100%;
+    z-index: 1;
+
+    @media screen and (min-width: $screen-tl) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      height: 100%;
+      margin: 100px 0 125px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: calc(-100% / 12);
+      display: none;
+      background-image: url("../../img/news__planet.png");
+      content: "";
+
+      @media screen and (min-width: $screen-tl) {
+        z-index: -1;
+        display: block;
+        width: 400px;
+        height: 400px;
+        background-size: 400px;
+      }
+
+      @media screen and (min-width: $screen-d) {
+        width: 564px;
+        height: 564px;
+        background-size: 564px;
+      }
+    }
+  }
+
+  &__left {
+    @media screen and (min-width: $screen-tl) {
+      grid-column: 1/span 8;
+      grid-template-columns: repeat(8, 1fr);
+    }
+  }
+
+  &__title {
+    margin: 0 0 16px;
+    font-weight: 300;
+    font-size: fluid(22, 32, 320, 1680);
+    line-height: fluid(24, 36, 320, 1680);
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 300;
+    font-size: fluid(14, 18, 320, 1680);
+    line-height: fluid(20, 24, 320, 1680);
   }
 }
